@@ -1,0 +1,1 @@
+python generate_publications.py publications.bib publications.html --no-js-filters

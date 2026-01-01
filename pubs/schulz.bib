@@ -1,21 +1,24 @@
-@techreport{schulz2008mpi,
-  title={MPI Multicore Linktest Benchmark},
-  author={Schulz, Martin},
-  year={2008},
-  institution={Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)}
+
+
+@inproceedings{schulz2002,
+author = {Schulz, Martin and Tao, Jie and Jeitner, J\"{u}rgen and Karl, Wolfgang},
+title = {A proposal for a new hardware cache monitoring architecture},
+year = {2002},
+isbn = {9781450373685},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/773146.773047},
+doi = {10.1145/773146.773047},
+abstract = {The analysis of the memory access behavior of applications, an essential step for a successful cache optimization, is a complex task. It needs to be supported with appropriate tools and monitoring facilities. Currently, however, users can only rely on either simulation based approaches, which deliver a large degree of detail but are restricted in their applicability, or on hardware counters embedded into processors, which allow to keep track of very few, mostly global events and hence only provide limited data.In this work a proposal for novel hardware monitoring facility is presented which exhibits both the details of traditional simulations and the low--overhead of hardware counters. Like the latter approach, it is also targeted towards an implementation within the processor for a direct and non--intrusive access to caches and memory busses. Unlike traditional counters, however, it delivers a detailed picture of the complete memory access behavior of applications. This is achieved by generating so--called memory access histograms, which show access frequencies in relation to the applications address space. Such spatial memory access information can then be used for efficient program optimization by focusing on the code and data segments which were found to exhibit a poor cache behavior.},
+booktitle = {Proceedings of the 2002 Workshop on Memory System Performance},
+pages = {76–85},
+numpages = {10},
+location = {Berlin, Germany},
+series = {MSP '02}
 }
 
-@article{lee2006stack,
-  title={Stack Trace Analysis for Large Scale Debugging},
-  author={Lee, Gregory and Miller, Barton P and Schulz, Martin},
-  year={2006}
-}
 
-@article{schulz2002,
-  title={A Proposal for a New Cache Monitoring Architecture},
-  author={Schulz, Martin and Tao, Jie and Jeitner, J{\"u}rgen and Karl, Wolfgang},
-  year={2002}
-}
+
 
 @article{schulz1999part,
   title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.4. 2 Tradeoff Between Transparency and Performance. 17.4. 3 Current},
@@ -55,25 +58,6 @@
   publisher={IOS Press}
 }
 
-@article{schulz2003glastechnische,
-  title={Glastechnische Verwertungsm{\"o}glichkeiten industrieller Nebenprodukte mit hydraulischen Eigenschaften},
-  author={Schulz, M and M{\"u}ller, A and Hamann, B},
-  journal={ZKG international},
-  volume={56},
-  pages={68--79},
-  year={2003}
-}
-
-@article{schulzkeeping,
-  title={Keeping up with Growing Machine Sizes: Challenges and Opportunities for Scaling Tools},
-  author={Schulz, Martin}
-}
-
-@article{taoframework,
-  title={A Framework for Monitoring Shared Memory Applications},
-  author={Tao, Jie and Schulz, Martin}
-}
-
 @inproceedings{biswas2009psmalloc,
   title={PSMalloc: content based memory management for mpi applications},
   author={Biswas, Susmit and Franklin, Diana and Sherwood, Timothy and Chong, Frederic T and de Supinski, Bronis R and Schulz, Martin},
@@ -89,15 +73,6 @@
   pages={740--749},
   year={2016},
   organization={IEEE}
-}
-
-@inproceedings{trinitis2002current,
-  title={Current trends in numerical simulation for parallel engineering environments},
-  author={Trinitis, Carsten and Schulz, Martin},
-  booktitle={European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting},
-  pages={61--61},
-  year={2002},
-  organization={Springer Berlin Heidelberg Berlin, Heidelberg}
 }
 
 @inproceedings{brown2017accelerating,
@@ -150,21 +125,6 @@
   organization={Springer Berlin Heidelberg Berlin, Heidelberg}
 }
 
-@article{almasisbac,
-  title={SBAC-PAD 2010},
-  author={Almasi, Gheorghe and Almeida, Jussara and Amato, Nancy and Amorim, Claudio and Araujo, Guido and Bader, David and Balaji, Pavan and Bilardi, Gianfranco and Bodin, Francois and Branco, Luiz and others}
-}
-
-@article{mohammad2016outdoor,
-  title={Outdoor measurements of a photovoltaic system using diffractive spectrum-splitting and concentration},
-  author={Mohammad, N and Schulz, M and Wang, P and Menon, R},
-  journal={AIP Advances},
-  volume={6},
-  number={9},
-  year={2016},
-  publisher={AIP Publishing}
-}
-
 @inproceedings{protze2014towards,
   title={Towards providing low-overhead data race detection for large OpenMP applications},
   author={Protze, Joachim and Atzeni, Simone and Ahn, Dong H and Schulz, Martin and Gopalakrishnan, Ganesh and M{\"u}ller, Matthias S and Laguna, Ignacio and Rakamaric, Zvonimir and Lee, Greg L},
@@ -215,11 +175,6 @@
   organization={IEEE}
 }
 
-@article{grossocomputer,
-  title={Computer Graphics Group Universit at Erlangen-N urnberg, Germany},
-  author={Grosso, Roberto and Schulz, Martin and Ertl, Thomas}
-}
-
 @inproceedings{brown2018interference,
   title={Interference between I/O and MPI traffic on fat-tree networks},
   author={Brown, Kevin A and Jain, Nikhil and Matsuoka, Satoshi and Schulz, Martin and Bhatele, Abhinav},
@@ -243,14 +198,6 @@
   year={1999}
 }
 
-@inproceedings{almeida2008topic,
-  title={Topic 2: Performance Prediction and Evaluation.},
-  author={Almeida, Francisco and Gerndt, Michael and Hoisie, Adolfy and Schulz, Martin},
-  booktitle={Euro-Par},
-  pages={89},
-  year={2008}
-}
-
 @inproceedings{sakamoto2017production,
   title={Production hardware overprovisioning: Real-world performance optimization using an extensible power-aware resource management framework},
   author={Sakamoto, Ryuichi and Cao, Thang and Kondo, Masaaki and Inoue, Koji and Ueda, Masatsugu and Patki, Tapasya and Ellsworth, Daniel and Rountree, Barry and Schulz, Martin},
@@ -268,12 +215,26 @@
   year={2008}
 }
 
-@inproceedings{sato2017chris,
-  title={Chris chambreau noise injection techniques for reproducing subtle and unintended message races},
-  author={Sato, Kento and Ahn, Dong H and Laguna, Ignacio and Lee, Gregory L and Schulz, Martin},
-  booktitle={Proceeding of the 22nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, Austin, Texas},
-  year={2017}
+@inproceedings{10.1145/3018743.3018767,
+author = {Sato, Kento and Ahn, Dong H. and Laguna, Ignacio and Lee, Gregory L. and Schulz, Martin and Chambreau, Christopher M.},
+title = {Noise Injection Techniques to Expose Subtle and Unintended Message Races},
+year = {2017},
+isbn = {9781450344937},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3018743.3018767},
+doi = {10.1145/3018743.3018767},
+abstract = {Debugging intermittently occurring bugs within MPI applications is challenging, and message races, a condition in which two or more sends race to match with a receive, are one of the common root causes. Many debugging tools have been proposed to help programmers resolve them, but their runtime interference perturbs the timing such that subtle races often cannot be reproduced with debugging tools. We present novel noise injection techniques to expose message races even under a tool's control. We first formalize this race problem in the context of non-deterministic parallel applications and use this analysis to determine an effective noise-injection strategy to uncover them. We codified these techniques in NINJA (Noise INJection Agent) that exposes these races without modification to the application. Our evaluations on synthetic cases as well as a real-world bug in Hypre-2.10.1 show that NINJA significantly helps expose races.},
+booktitle = {Proceedings of the 22nd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+pages = {89–101},
+numpages = {13},
+keywords = {debugging, mpi, non-determinism},
+location = {Austin, Texas, USA},
+series = {PPoPP '17}
 }
+
+
+
 
 @article{schulz2010performance,
   title={On the Performance of the Miranda CFD code on Multicore Architectures},
@@ -293,16 +254,6 @@
   organization={Springer Berlin Heidelberg Berlin, Heidelberg}
 }
 
-@article{schulz1999part,
-  title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.3. 2 Dynamically Paged Memory. 17.3. 3 Enabling Caching Using Relaxed},
-  author={Schulz, Martin},
-  journal={Lecture Notes in Computer Science},
-  volume={1734},
-  pages={296--296},
-  year={1999},
-  publisher={Berlin: Springer-Verlag, 1973-}
-}
-
 @inproceedings{yeom2014overcoming,
   title={Overcoming the scalability challenges of epidemic simulations on blue waters},
   author={Yeom, Jae-Seung and Bhatele, Abhinav and Bisset, Keith and Bohm, Eric and Gupta, Abhishek and Kale, Laxmikant V and Marathe, Madhav and Nikolopoulos, Dimitrios S and Schulz, Martin and Wesolowski, Lukasz},
@@ -312,14 +263,18 @@
   organization={IEEE}
 }
 
-@article{gamblin2011intuitive,
-  title={Intuitive performance visualization techniques for topological analysis on capability machines},
-  author={Gamblin, Todd and Schulz, Martin and Bremer, Timo and Levine, JoshuaA and Pascucci, Valerio},
-  journal={研究報告ハイパフォーマンスコンピューティング (HPC)},
-  volume={2011},
-  number={51},
-  pages={1--8},
-  year={2011}
+@inproceedings{GSBLP11,
+  author = {Todd Gamblin and
+      Martin Schulz and
+         Peer-Timo Bremer and
+         Joshua A. Levine and
+         Valerio Pascucci},
+  title = {Intuitive performance visualization techniques for topological analysis on capability machines},
+  booktitle = {Summer United Workshops on Parallel, Distributed, and Cooperative Processing},
+  year = {2011},
+  month = jul,
+  address = {Kagoshima, Japan},
+  projtype = {W}
 }
 
 @inproceedings{hilbrich2013supinski,
@@ -346,10 +301,6 @@
   organization={IEEE}
 }
 
-@article{allenhpcmaspa,
-  title={HPCMASPA 2015 Program Committee},
-  author={Allen, Ben and Anderson, Jonathon and Cook, Jon and Karavanic, Karen and Kowalkowski, James and Lan, Zhiling and Lowell, Daniel and Mason, AMD Mike and Milner, Ryan and Paterno, Marc and others}
-}
 
 @inproceedings{singh2010comparing,
   title={Comparing scalability prediction strategies on an SMP of CMPs},
@@ -467,7 +418,7 @@
 
 @techreport{pearce2011topology,
   title={A Topology-Aware Application-Independent Load Model for Parallel Codes},
-  author={Pearce, OT and de Supinski, BR and Gamblin, GT and Schulz, MW and Amato, NM},
+  author={Pearce, O. and de Supinski, B.R. and Gamblin, G. and Schulz, M. and Amato, N.},
   year={2011},
   institution={Lawrence Livermore National Lab.(LLNL), Livermore, CA (United States)}
 }
@@ -541,12 +492,6 @@
   organization={IEEE}
 }
 
-@article{de2006efficiently,
-  title={Efficiently Exploring Architectural Design Spaces via Predictive Modeling},
-  author={de Supinski, Bronis R and Schulz, Martin and Caraana, Rich},
-  year={2006}
-}
-
 @inproceedings{georgakoudis2019safire,
   title={Safire: Scalable and accurate fault injection for parallel multithreaded applications},
   author={Georgakoudis, Giorgis and Laguna, Ignacio and Vandierendonck, Hans and Nikolopoulos, Dimitrios S and Schulz, Martin},
@@ -581,7 +526,7 @@
 }
 
 @article{tao2001part,
-  title={Part II Tools and Environments for Parallel and Distributed Programming-Visualizing the Memory Access Behavior of Shared Memory Applications on NUMA Architectures},
+  title={Tools and Environments for Parallel and Distributed Programming-Visualizing the Memory Access Behavior of Shared Memory Applications on NUMA Architectures},
   author={Tao, Jie and Karl, Wolfgang and Schulz, Martin},
   journal={Lecture Notes in Computer Science},
   volume={2073},
@@ -642,16 +587,6 @@
   publisher={Sage Publications Sage UK: London, England}
 }
 
-@article{schulz1999part,
-  title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.3 SCI-VM Implementation Challenges. 17.3. 1 Mapping of Individual Page},
-  author={Schulz, Martin},
-  journal={Lecture Notes in Computer Science},
-  volume={1734},
-  pages={295--295},
-  year={1999},
-  publisher={Berlin: Springer-Verlag, 1973-}
-}
-
 @techreport{de2008open,
   title={An open infrastructure for scalable, reconfigurable analysis},
   author={de Supinski, Bronis R and Fowler, Rob and Gamblin, Todd and Mueller, Frank and Ratn, Prasun and Schulz, Martin},
@@ -687,11 +622,6 @@
   organization={IEEE}
 }
 
-@article{landgeanalyzing,
-  title={Analyzing Performance at Exascale Using Intuitive Visualizations},
-  author={Landge, Aaditya G and Isaacs, Katherine E and Bhatele, Abhinav and Saha, Avishek and Levine, Joshua A and Gamblin, Todd and Schulz, Martin and Bremer, Peer-Timo and Hamann, Bernd and Pascucci, Valerio}
-}
-
 @inproceedings{hilbrich2015event,
   title={Event-Action Mappings for Parallel Tools Infrastructures},
   author={Hilbrich, Tobias and Schulz, Martin and Brunst, Holger and Protze, Joachim and de Supinski, Bronis R and M{\"u}ller, Matthias S},
@@ -701,15 +631,6 @@
   organization={Springer Berlin Heidelberg Berlin, Heidelberg}
 }
 
-@article{schulz1999part,
-  title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.1 Introduction},
-  author={Schulz, Martin},
-  journal={Lecture Notes in Computer Science},
-  volume={1734},
-  pages={291--291},
-  year={1999},
-  publisher={Berlin: Springer-Verlag, 1973-}
-}
 
 @article{chakraborty2020ereinit,
   title={EReinit: Scalable and efficient fault-tolerance for bulk-synchronous MPI applications},
@@ -719,17 +640,6 @@
   number={3},
   pages={e4863},
   year={2020}
-}
-
-@article{schulz2003potentials,
-  title={Potentials for utilization of industrial byproducts with hydraulic properties in glass-making},
-  author={Schulz, M and Muller, A and Hamann, BB},
-  journal={ZKG INTERNATIONAL},
-  volume={56},
-  number={12},
-  pages={68--79},
-  year={2003},
-  publisher={BAUVERLAG GMBH PRESSEHAUS, AM KLINGENWEG 4A, D-65396 WALLUF, GERMANY}
 }
 
 @inproceedings{schulz2005owl,
@@ -748,22 +658,6 @@
   pages={502--503},
   year={2005},
   publisher={Berlin: Springer-Verlag, 1973-}
-}
-
-@article{cobb2011mpiecho,
-  title={MPIEcho: A Framework for Transparent MPI Task Replication; CU-CS-1082-11},
-  author={Cobb, Guy and Rountree, Barry and Tufo, Henry and Schulz, Martin},
-  year={2011}
-}
-
-@article{mckeechalmers,
-  title={Chalmers University of Technology Lawrence Livermore National Laboratory},
-  author={McKee, Sally A and Schulz, Martin}
-}
-
-@article{schulz3,
-  title={3 HIPS• Workshop on High-Level Parallel Programming Models \& Supportive Environments},
-  author={Schulz, Martin and M{\"u}ller, Frank}
 }
 
 @inproceedings{trinitis20065,
@@ -811,12 +705,7 @@
   pages={247--247},
   year={2002},
   organization={IEEE}
-}
-
-@article{bremervisual,
-  title={Visual Performance Analysis ‘14},
-  author={Bremer, Peer-Timo and Mohr, Bernd and Schulz, Martin and Pascucci, Valerio}
-}
+  }
 
 @inproceedings{li2011scalable,
   title={Scalable memory registration for high performance networks using helper threads},
@@ -849,11 +738,6 @@
   journal={Connecting Performance Analysis and Visualization to Advance Extreme Scale Computing},
   pages={31},
   year={2014}
-}
-
-@article{arimatoward,
-  title={Toward Footprint-Aware Power Shifting for Hybrid Memory Based Systems},
-  author={Arima, Eishi and Hanawa, Toshihiro and Schulz, Martin}
 }
 
 @article{tao2001tools,
@@ -902,13 +786,6 @@
   publisher={Elsevier}
 }
 
-@inproceedings{schulz2006open,
-  title={Open| SpeedShop: open source performance analysis for Linux clusters},
-  author={Schulz, Martin and Galarowicz, Jim and Hachfeld, William},
-  booktitle={Proceedings of the 2006 ACM/IEEE conference on Supercomputing},
-  pages={14--es},
-  year={2006}
-}
 
 @techreport{schindewolf2012scientific,
   title={What Scientific Applications can Benefit from Hardware Transactional Memory?-Early experience from a commercially available HTM system.},
@@ -928,14 +805,6 @@
   publisher={ACM New York, NY, USA}
 }
 
-@article{bremer20144,
-  title={4 Participant Contributions 4.1 Looking at time-stamped data},
-  author={Bremer, Peer-Timo and Mohr, Bernd and Pascucci, Valerio and Schulz, Martin},
-  journal={Connecting Performance Analysis and Visualization to Advance Extreme Scale Computing},
-  pages={25},
-  year={2014}
-}
-
 @inproceedings{barnes2010using,
   title={Using focused regression for accurate time-constrained scaling of scientific applications},
   author={Barnes, Brad and Garren, Jeonifer and Lowenthal, David K and Reeves, Jaxk and de Supinski, Bronis R and Schulz, Martin and Rountree, Barry},
@@ -945,12 +814,6 @@
   organization={IEEE}
 }
 
-@inproceedings{labarta201010181,
-  title={10181 Abstracts Collection--Program Development for Extreme-Scale Computing},
-  author={Labarta, Jesus and Miller, Barton P and Mohr, Bernd and Schulz, Martin},
-  year={2010},
-  organization={Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik}
-}
 
 @article{isaacs2014combing,
   title={Combing the communication hairball: Visualizing parallel execution traces using logical time},
@@ -994,15 +857,6 @@
   publisher={North-Holland}
 }
 
-@article{schulz1999part,
-  title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.2 Designing a Global Virtual Memory. 17.2. 1 Building Block 1},
-  author={Schulz, Martin},
-  journal={Lecture Notes in Computer Science},
-  volume={1734},
-  pages={292--292},
-  year={1999},
-  publisher={Berlin: Springer-Verlag, 1973-}
-}
 
 @inproceedings{maiterth2016power,
   title={Power balancing in an emulated exascale environment},
@@ -1047,10 +901,6 @@
   organization={Springer Berlin Heidelberg Berlin, Heidelberg}
 }
 
-@article{baconstefan,
-  title={Stefan Mandl},
-  author={Bacon, Liz and Bessis, Nik and Blaszczyk, Andreas and Buchty, Rainer and Buettner, David and Butry{\l}o, Bogus{\l}aw and De Falco, Ivanoe and Dzung, Dacfey and Grigoras, Dan and Harriehausen, Thomas and others}
-}
 
 @techreport{noeth2005performance,
   title={Performance Application Programming Interface},
@@ -1076,10 +926,6 @@
   organization={IEEE}
 }
 
-@article{schulzalternative,
-  title={Alternative Rohstoffe f{\"u}r Glasprodukte aus alkalischen Prozess-St{\"a}uben der Zementindustrie},
-  author={Schulz, M and Hamann, B and Schneider, C}
-}
 
 @article{schulz2005scalable,
   title={Scalable dynamic binary instrumentation for Blue Gene/L},
@@ -1146,12 +992,6 @@
   organization={IEEE}
 }
 
-@phdthesis{schulz2002interaktive,
-  title={Interaktive Visualisierungssysteme zur beschleunigten Analyse von Simulationsergebnissen im Fahrzeugentwicklungsprozess},
-  author={Schulz, Martin},
-  year={2002},
-  school={Stuttgart, Univ., Diss., 2002}
-}
 
 @book{alexander2014euro,
   title={Euro-Par 2013: Parallel Processing: BigDataCloud, DIHC, FedICI, HeteroPar, HiBB, LSDVE, MHPC, OMHI, PADABS, PROPER, Resilience, ROME, and UCHPC},
@@ -1167,15 +1007,6 @@
   year={2007}
 }
 
-@article{schulz1999part,
-  title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.4 Framework for SCI-VM-based Programming Models. 17.4. 1 SCI-VM},
-  author={Schulz, Martin},
-  journal={Lecture Notes in Computer Science},
-  volume={1734},
-  pages={297--297},
-  year={1999},
-  publisher={Berlin: Springer-Verlag, 1973-}
-}
 
 @inproceedings{laguna2013study,
   title={A study of application-level recovery methods for transient network faults},
@@ -1192,18 +1023,6 @@
   institution={Lawrence Livermore National Lab.(LLNL), Livermore, CA (United States)}
 }
 
-@article{wickramasinghesupporting,
-  title={Supporting High Level Types and Reduction Functions for Performance Data Collection},
-  author={Wickramasinghe, Udayanga and B{\"o}hme, David and Gamblin, Todd and Schulz, Martin}
-}
-
-@article{trinitisparsim,
-  title={ParSim 2009},
-  author={Trinitis, Carsten and Bader, Michael and Schulz, Martin},
-  journal={Recent Advances in Parallel Virtual Machine and Message Passing Interface},
-  pages={292},
-  publisher={Springer}
-}
 
 @inproceedings{patki2015practical,
   title={Practical resource management in power-constrained, high performance computing},
@@ -3033,11 +2852,6 @@
   organization={IEEE}
 }
 
-@article{mohanexploiting,
-  title={Exploiting Spatial Regularity in Data Memory References},
-  author={Mohan, Tushar and de Supinski, Bronis R and McKee, Sally A and Schulz, Martin and Mueller, Frank and Yoo, Andy}
-}
-
 @inproceedings{reuding1998virtual,
   title={Virtual Reality and the Link between Design and Engineering Analysis},
   author={Reuding, Thomas and Schulz, Martin},
@@ -3062,25 +2876,10 @@
   publisher={World Scientific}
 }
 
-@inproceedings{stegmaier2003resampling,
-  title={Resampling of Large Datasets for Industrial Flow Visualization},
-  author={Stegmaier, Simon},
-  booktitle={Workshop on Vision, Modelling, and Visualization VMV'03},
-  year={2003}
-}
 
 @article{lowenthalexploring,
   title={Exploring Hardware Overprovisioning in Power-Constrained, High Performance Computing},
-  author={Lowenthal, Tapasya Patki1 David and Rountree, Barry and Schulz, Martin and de Supinski, Bronis}
-}
-
-@inproceedings{schulz1998crashing,
-  title={Crashing in cyberspace-evaluating structural behaviour of car bodies in a virtual environment},
-  author={Schulz, Martin and Ertl, Th and Reuding, Th},
-  booktitle={Proceedings. IEEE 1998 Virtual Reality Annual International Symposium (Cat. No. 98CB36180)},
-  pages={160--166},
-  year={1998},
-  organization={IEEE}
+  author={Lowenthal, Tapasya Patki David and Rountree, Barry and Schulz, Martin and de Supinski, Bronis}
 }
 
 @inproceedings{schulz2002overcoming,
@@ -3090,16 +2889,6 @@
   pages={319--319},
   year={2002},
   organization={IEEE}
-}
-
-@article{schulz1999part,
-  title={Part VI. Shared Memory Programming Models and Runtime Mechanisms-17. True Shared Memory Programming on SCI-based Clusters-17.7. 2 Synchronization Mechanisms. 17.7. 3 Applying a Relaxed Consistency},
-  author={Schulz, Martin},
-  journal={Lecture Notes in Computer Science},
-  volume={1734},
-  pages={306--306},
-  year={1999},
-  publisher={Berlin: Springer-Verlag, 1973-}
 }
 
 @article{laguna2016evaluating,
@@ -3159,11 +2948,6 @@
   publisher={Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik}
 }
 
-@article{kuschfeldtsven,
-  title={Sven Kuschfeldt kuschfel@ informatik. uni-erlangen. de+ 49 9131 85-9923},
-  author={Kuschfeldt, Sven and Schulz, Martin and Reuding, Thomas and Holzner, Michael and Ertl, Thomas}
-}
-
 @techreport{gamblin2010performance,
   title={I/O Performance of a Large-Scale, Interpreter-Driven Laser-Plasma Interaction Code},
   author={Gamblin, T and Langer, SH and Still, B and Hedges, R and Schulz, M and de Supinski, BR},
@@ -3221,13 +3005,6 @@
   institution={Lawrence Livermore National Lab.(LLNL), Livermore, CA (United States)}
 }
 
-@techreport{trinitis2006current,
-  title={Current Trends in Numerical Simulation for Parallel Engineering Environments New Directions and Work-in-Progress},
-  author={Trinitis, C and Schulz, M},
-  year={2006},
-  institution={Lawrence Livermore National Lab.(LLNL), Livermore, CA (United States)}
-}
-
 @inproceedings{laguna2011large,
   title={Large scale debugging of parallel tasks with automaded},
   author={Laguna, Ignacio and Gamblin, Todd and de Supinski, Bronis R and Bagchi, Saurabh and Bronevetsky, Greg and Anh, Dong H and Schulz, Martin and Rountree, Barry},
@@ -3243,10 +3020,7 @@
   year={2012}
 }
 
-@article{bougecommittees,
-  title={Committees Committees},
-  author={Boug{\'e}, Luc and Eigenmann, Rudolf and Gerndt, Michael and Kasahara, Hironori and Lin, Calvin and Lowenthal, David and Luque, Emilio and Di Martino, Beniamino and Malony, Allen and Moreira, Jose and others}
-}
+
 
 @inproceedings{ahn2013overcoming,
   title={Overcoming extreme-scale reproducibility challenges through a unified, targeted, and multilevel toolset},
@@ -3265,12 +3039,6 @@
   organization={IEEE}
 }
 
-@misc{ipek2006asplos,
-  title={ASPLOS-XII: Proceedings of the 12th international conference on Architectural support for programming languages and operating systems},
-  author={Ipek, Engin and McKee, Sally A and Caruana, Rich and de Supinski, Bronis R and Schulz, Martin},
-  year={2006},
-  publisher={Oct}
-}
 
 @inproceedings{ellsworth2017simulating,
   title={Simulating power scheduling at scale},
@@ -3305,11 +3073,6 @@
   organization={IEEE}
 }
 
-@article{ahncoming,
-  title={Coming Soon| A Toolset to Fight Non-deterministic Bugs at Scale},
-  author={Ahn, Dong H and Chambreau, Chris and Laguna, Ignacio and Lee, Greg and Sato, Kento and Schulz, Martin and Atzeni, Simone and Gopalakrishnan, Ganesh and Ramari{\'c}, Zvonimir and Protze, Joachim}
-}
-
 @inproceedings{hilbrichsupinski,
   title={de de Supinski, Martin Schulz, Matthias S. M{\"u}ller, and Wolfgang E. Nagel. Intralayer Communication for Tree-Based Overlay Networks},
   author={Hilbrich, Tobias and Protze, Joachim and Bronis, R},
@@ -3341,13 +3104,6 @@
   organization={IEEE}
 }
 
-@inproceedings{labarta201010181,
-  title={10181 Executive Summary--Program Development for Extreme-Scale Computing},
-  author={Labarta, Jesus and Miller, Barton P and Mohr, Bernd and Schulz, Martin},
-  year={2010},
-  organization={Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik}
-}
-
 @article{hilbrich2013mpi,
   title={MPI runtime error detection with MUST: advances in deadlock detection},
   author={Hilbrich, Tobias and Protze, Joachim and Schulz, Martin and de Supinski, Bronis R and M{\"u}ller, Matthias S},
@@ -3359,13 +3115,7 @@
   publisher={IOS Press}
 }
 
-@article{bremer20143,
-  title={3.6 A (n opinionated) tour of InfoVis},
-  author={Bremer, Peer-Timo and Mohr, Bernd and Pascucci, Valerio and Schulz, Martin},
-  journal={Connecting Performance Analysis and Visualization to Advance Extreme Scale Computing},
-  pages={23},
-  year={2014}
-}
+
 
 @inproceedings{sakamoto2018analyzing,
   title={Analyzing resource trade-offs in hardware overprovisioned supercomputers},
@@ -3419,13 +3169,6 @@
   organization={Springer International Publishing Cham}
 }
 
-@phdthesis{mohan2003detecting,
-  title={Detecting and exploiting spatial regularity in data memory references},
-  author={Mohan, Tushar},
-  year={2003},
-  school={School of Computing, University of Utah}
-}
-
 @inproceedings{schulz2004implementation,
   title={Implementation and evaluation of a scalable application-level checkpoint-recovery scheme for MPI programs},
   author={Schulz, Martin and Bronevetsky, Greg and Fernandes, Rohit and Marques, Daniel and Pingali, Keshav and Stodghill, Paul},
@@ -3464,12 +3207,6 @@
   publisher={IEEE}
 }
 
-@techreport{schulz2007ossperixml,
-  title={Ossperixml version 1},
-  author={Schulz, M and Hanson-Smith, V},
-  year={2007},
-  institution={Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)}
-}
 
 @inproceedings{schulz2000fifth,
   title={Fifth International Workshop on High-level Parallel Programming Models and Supportive Environments HIPS 2000},
@@ -3531,10 +3268,7 @@
   institution={Lawrence Livermore National Lab.(LLNL), Livermore, CA (United States)}
 }
 
-@article{muellerhigh,
-  title={High-level Parallel Programming Systems},
-  author={Mueller, Frank and Schulz, Martin and Bader, David and Boug{\'e}, Luc and Burkhart, Helmar and Eigenmann, Rudolf and Irigoin, Francois}
-}
+
 
 @inproceedings{casas2012fault,
   title={Fault resilience of the algebraic multi-grid solver},
@@ -3610,11 +3344,6 @@
   institution={Lawrence Livermore National Lab.(LLNL), Livermore, CA (United States)}
 }
 
-@article{maiterthhpcs,
-  title={HPCS 2017},
-  author={Maiterth, Matthias and Wilde, Torsten and Lowenthal, David and Rountree, Barry and Schulz, Martin and Eastep, Jonathan and Kranzlmiiller, Dieter}
-}
-
 @techreport{sato2016noise,
   title={Noise Inject Agent Tool},
   author={Sato, Kento and Ahn, Dong and Lagnua, Ignacio and Lee, Gregory and Schulz, Martin and Chambreau, Christopher},
@@ -3629,18 +3358,6 @@
   pages={94--107},
   year={2018},
   organization={IEEE}
-}
-
-@article{chapmanprogramming,
-  title={Programming Environments at Extreme Scale},
-  author={Chapman, Barbara and Harrison, Robert and Graham, Richard L and Nagel, Wolfgang and Schulz, Martin}
-}
-
-@misc{ahn2009ignacio,
-  title={Ignacio. Laguna, Greg L. Lee, Ben Liblit, Barton P. Miller, and Martin Schulz. Scalable temporal order analysis for large scale debugging},
-  author={Ahn, Dong H and de Supinski, Bronis R},
-  year={2009},
-  publisher={SC}
 }
 
 @techreport{lee2017stack,
@@ -3676,11 +3393,6 @@
   organization={Springer Berlin Heidelberg Berlin, Heidelberg}
 }
 
-@article{bronevetskyblocking,
-  title={Blocking Application-level Checkpointing for OpenMP Programs},
-  author={Bronevetsky, Greg and Schulz, Martin and Szwed, Peter and Zaman, S Shafat}
-}
-
 @inproceedings{ahn2013efficient,
   title={Efficient and scalable retrieval techniques for global file properties},
   author={Ahn, Dong H and Brim, Michael J and De Supinski, Bronis R and Gamblin, Todd and Lee, Gregory L and LeGendre, Matthew P and Miller, Barton P and Moody, Adam and Schulz, Martin},
@@ -3698,22 +3410,7 @@
   year={2014}
 }
 
-@article{raynalinvited,
-  title={Invited Papers},
-  author={Raynal, Michel and Casas, Marc and Moreto, Miquel and Alvarez, Lluc and Castillo, Emilio and Chasapis, Dimitrios and Hayes, Timothy and Jaulmes, Luc and Palomar, Oscar and Unsal, Osman and others}
-}
 
-@article{bhateleworkshop,
-  title={Workshop Chairs},
-  author={Bhatele, Abhinav and Boehme, David and Wolf, Felix and Bhatia, Harsh and Brunst, Holger and Calotoiu, Alexandru and F{\"u}rlinger, Karl and Gamblin, Todd and Gimenez, Judit and Hermanns, Marc-Andre and others}
-}
-
-@misc{bhatele2019programming,
-  title={Programming and Performance Visualization Tools: International Workshops, ESPT 2017 and VPA 2017, Denver, CO, USA, November 12 and 17, 2017, and ESPT 2018 and VPA 2018, Dallas, TX, USA, November 16 and 11, 2018, Revised Selected Papers},
-  author={Bhatele, Abhinav and Boehme, David and Levine, Joshua A and Malony, Allen D and Schulz, Martin},
-  year={2019},
-  publisher={Springer}
-}
 
 @article{schulz2002analyzing,
   title={Analyzing engineering simulations in a virtual environment},
@@ -3756,11 +3453,6 @@
   organization={IEEE}
 }
 
-@article{lagunaautomaded,
-  title={AutomaDeD: Debugging Large-Scale Parallel Programs},
-  author={Laguna, Ignacio and Mitra, Subrata and Bagchi, Saurabh and Gamblin, Todd and Schulz, Martin and Ahn, Dong and Supinski, Bronis and Bronevetsky, Greg}
-}
-
 @inproceedings{frank2019reducing,
   title={Reducing false node failure predictions in HPC},
   author={Frank, Alvaro and Yang, Dai and Brinkmann, Andre and Schulz, Martin and S{\"u}ss, Tim},
@@ -3778,15 +3470,6 @@
   year={2020}
 }
 
-@article{arima2019pattern,
-  title={A Pattern Aware Optimization for Hybrid Main Memories (Unrefereed Workshop Manuscript)},
-  author={ARIMA, Eishi and SCHULZ, Martin},
-  journal={情報処理学会研究報告 (Web)},
-  volume={2019},
-  number={ARC-236},
-  year={2019}
-}
-
 @inproceedings{ozer2020characterizing,
   title={Characterizing HPC performance variation with monitoring and unsupervised learning},
   author={Ozer, Gence and Netti, Alessio and Tafani, Daniele and Schulz, Martin},
@@ -3794,11 +3477,6 @@
   pages={280--292},
   year={2020},
   organization={Springer International Publishing Cham}
-}
-
-@article{schulzautomatic,
-  title={Automatic Customization of OS and Runtime Stacks},
-  author={Schulz, Martin and Lowenthal, David}
 }
 
 @inproceedings{raoofy2020time,
@@ -3870,11 +3548,6 @@
   pages={2671--2675},
   year={2020},
   organization={IEEE}
-}
-
-@article{schulzcache,
-  title={Cache-Aware Matrix Polynomials},
-  author={Schulz, Martin}
 }
 
 @inproceedings{altintas2020workshop,
@@ -3967,34 +3640,6 @@
   organization={IEEE}
 }
 
-@article{subramoniworkshop,
-  title={Workshop Organization},
-  author={Subramoni, Hari and Shafi, Aamir and Panda, Dhabaleswar K DK and Abduljabbar, Mustafa and Arora, Ritu and Samar Aseeri, KAUST and Arabia, Saudi and Gropp, William and Jeff Hammond, NVIDIA and Jannesari, Finland Ali and others}
-}
-
-@article{bhateleorganization,
-  title={Organization--ProTools 2020},
-  author={Bhatele, Abhinav and Boehme, David and Andreas Kn{\"u}pfer, ZIH and Besnard, Jean-Baptiste and Paratools, France and Bhatia, Harsh and Brunst, Holger and Calotoiu, Alexandru and Fuerlinger, Karl and Gamblin, Todd and others}
-}
-
-@article{octobergreat,
-  title={The Great Replacement: Myth, conspiracy theory, or reality? Part 4:“What they bring us is more valuable than gold”},
-  author={October, Zoltan Schreter}
-}
-
-@article{flueckiger2014digital,
-  title={Digital images and computer simulations},
-  author={Flueckiger, Barbara and Gaafar, Rania and Schulz, Martin},
-  year={2014},
-  publisher={Intellect Press}
-}
-
-@techreport{hemmert2017ht,
-  title={HT Breakout Discussions Modeling and Performance Tools.},
-  author={Hemmert, Karl Scott and Schulz, Martin},
-  year={2017},
-  institution={Sandia National Lab.(SNL-NM), Albuquerque, NM (United States)}
-}
 
 @article{bernholdtecp,
   title={ECP Milestone Report A Survey of MPI Usage in the US Exascale Computing Project WBS 2.3. 1.11 Open MPI for Exascale (OMPI-X)(formerly WBS 1.3. 1.13), Milestone STPM13-1/ST-PR-13-1000},
@@ -4056,11 +3701,6 @@
   institution={Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)}
 }
 
-@article{chungescape,
-  title={ESCAPE 2011},
-  author={Chung, I-Hsin and Lee, Che-Rung and Hsu, Ching-Hsien and Bhatele, Abhinav and Chen, Lydia and de Supinski, Bronis R and Kerbyson, Darren and Mohr, Bernd and Schultz, Martin and Sexton, James and others}
-}
-
 @article{li2009model,
   title={Model-Based Hybrid MPI/OpenMP Power-Aware Computing: ACM/IEEE Supercomputing'2009: High-performance Computing, Networking, Storage and Analysis (SC)},
   author={Li, D and Cameron, K and Nikolopoulos, Dimitrios and Schulz, M and De Supinski, B},
@@ -4086,7 +3726,7 @@
 
 @incollection{bode2021exploration,
   title={On the exploration and optimization of high-dimensional architectural design space},
-  author={Bode, Vincent and Huseynli, Fariz and Schreiber, Matrtin and Trinitis, Carsten and Schulz, Martin},
+  author={Bode, Vincent and Huseynli, Fariz and Schreiber, Martin and Trinitis, Carsten and Schulz, Martin},
   booktitle={Proceedings of the 2021 on Performance EngineeRing, Modelling, Analysis, and VisualizatiOn STrategy},
   pages={19--26},
   year={2021}
@@ -4094,7 +3734,8 @@
 
 @article{jungmairflexible,
   title={A Flexible Uncore Infrastructure for RISC-V Core Development},
-  author={Jungmair, Michael and Schmidt, Tobias and Engelke, Alexis and Ettenhofer, Armin and Krayer, Felix and Lauer, Jonas and von Ehren, Malte and Schulz, Martin}
+  author={Jungmair, Michael and Schmidt, Tobias and Engelke, Alexis and Ettenhofer, Armin and Krayer, Felix and Lauer, Jonas and von Ehren, Malte and Schulz, Martin},
+  booktitle="Proceedings of CARRV2021"
 }
 
 @inproceedings{perarnau2015argo,
@@ -4142,13 +3783,6 @@
   organization={Gesellschaft f{\"u}r Informatik eV}
 }
 
-@phdthesis{protze2021modular,
-  title={Modular techniques and interfaces for data race detection in multi-paradigm parallel programming},
-  author={Protze, Joachim},
-  year={2021},
-  school={epubli}
-}
-
 @inproceedings{kronbichler2021next,
   title={A next-generation discontinuous Galerkin fluid dynamics solver with application to high-resolution lung airflow simulations},
   author={Kronbichler, Martin and Fehn, Niklas and Munch, Peter and Bergbauer, Maximilian and Wichmann, Karl-Robert and Geitner, Carolin and Allalen, Momme and Schulz, Martin and Wall, Wolfgang A},
@@ -4157,15 +3791,6 @@
   year={2021}
 }
 
-@misc{schulz2014private,
-  title={Private prescriptions of hypnotics and tranquilizers for statutory health-insured patients: regulatory framework versus reality of primary care},
-  author={Schulz, Martin},
-  journal={Deutsche medizinische Wochenschrift (1946)},
-  volume={139},
-  number={22},
-  pages={1151--1152},
-  year={2014}
-}
 
 @article{carns2021understanding,
   title={Understanding I/O behavior in scientific and data-intensive computing (Dagstuhl Seminar 21332)},
@@ -4185,19 +3810,7 @@
   year={2021}
 }
 
-@article{elmorshedynovel,
-  title={A Novel Fast Energy Storage Fault Current Limiter Topology for High-Voltage Direct Current Transmission System............................................................ H. Chen, J. Yuan, H. Zhou, S. Xu, C. Zou, and F. Chen 5032 Latest Advances of Model Predictive Control in Electrical Drives—Part II: Applications and Benchmarking With Classical Control Methods......................... J. Rodriguez, C. Garcia, A. Mora, SA Davari, J. Rodas, DF Valencia},
-  author={Elmorshedy, M and Wang, F and Zuo, K and Tarisciotti, L and Flores-Bahamonde, F and Xu, W and Zhang, Y and Norambuena, M and Emadi, A and Geyer, T and others}
-}
 
-@article{schneider2007production,
-  title={Production of glass products--a possible new way of utilizing dusts from the cement industry},
-  author={Schneider, C and Hamann, B and Schulz, M},
-  journal={Cement International},
-  volume={5},
-  pages={64--73},
-  year={2007}
-}
 
 @misc{knoop2017architecture,
   title={Architecture of Computing Systems--ARCS 2017},
@@ -4206,24 +3819,8 @@
   publisher={Springer}
 }
 
-@inproceedings{schulz2002application,
-  title={Application of alkaline by-products of the cement-Manufacture for the production of glassy material and products},
-  author={Schulz, M and Hamann, B},
-  booktitle={Proceedings of the 6th World Congress on Integrated Resource Management, Geneva, Switzerland},
-  volume={1215},
-  year={2002}
-}
 
-@article{schulz2001work,
-  title={Work-in-Progress Session},
-  author={Schulz, Martin and Childers, Bruce},
-  year={2001}
-}
 
-@article{schulzemulation,
-  title={An Emulation Layer for Dynamic Resources with MPI Sessions},
-  author={Schulz, Martin and Pritchard, Howard and Holmes, Daniel J}
-}
 
 @inproceedings{raoofy2021benchmarking,
   title={Benchmarking Machine Learning Inference in FPGA-based Accelerated Space Applications},
@@ -4314,10 +3911,7 @@
   organization={IEEE}
 }
 
-@article{aburukba2022,
-  title={2022 IEEE International Conference on Edge Computing and Communications (EDGE)| 978-1-6654-8140-3/22/$31.00{\copyright} 2022 IEEE| DOI: 10.1109/EDGE55608. 2022.00036},
-  author={Aburukba, Raafat and Al-Ali, AR and Albano, Michele and Al-Naday, Mays and AlZahrani, Yazeed and Ba, Amadou and Bellotti, Francesco and Berta, Riccardo and Bhatta, Dixit and Chen, Shiping and others}
-}
+
 
 @inproceedings{huber2022towards,
   title={Towards dynamic resource management with MPI sessions and PMIx},
@@ -4398,11 +3992,6 @@
   publisher={IEEE}
 }
 
-@article{fohryload,
-  title={Load Balancing, Fault Tolerance, and Resource Elasticity for Asynchronous Many-Task Systems},
-  author={Fohry, Claudia and Schulz, Martin}
-}
-
 @inproceedings{carretero2022malleability,
   title={Malleability Techniques and Applications in High-Performance Computing (HPCMALL 2022)},
   author={Carretero, Jes{\'u}s and Schulz, Martin and Suarez, Estela},
@@ -4418,16 +4007,6 @@
   publisher={Springer Berlin Heidelberg}
 }
 
-@misc{schulz2022architecture,
-  title={Architecture of Computing Systems},
-  author={Schulz, Martin and Trinitis, Carsten and Papadopoulou, Nikela and Pionteck, Thilo},
-  year={2022}
-}
-
-@article{welleinprotools,
-  title={ProTools 2022 Workshop Organization},
-  author={Wellein, Gerhard and Huck, Kevin and Schulz, Martin and Gerndt, Michael and Rosen, Paul and Islam, Tanzima and Fujiwara, Takanori}
-}
 
 @inproceedings{mete2022predicting,
   title={Predicting the optimizability for workflow decisions},
@@ -4462,7 +4041,7 @@
 
 @techreport{ferreira2023workflows,
   title={Workflows Community Summit 2022: A Roadmap Revolution},
-  author={Ferreira Da Silva, Rafael and Badia, Rosa and Bala, Venkat and Bard, Deborah and Bremer, Peer-Timo and Buckley, Ian and Caino-Lores, Silvina and Chard, Kyle and Goble, Carole and Jha, Shantenu and others},
+  author={Ferreira Da Silva, Rafael and Badia, Rosa and Bala, Venkat and Bard, Deborah and Bremer, Peer-Timo and Buckley, Ian and Caino-Lores, Silvina and Chard, Kyle and Goble, Carole and Jha, Shantenu and Schulz, Martin and others},
   year={2023},
   institution={Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States)}
 }
@@ -4500,12 +4079,6 @@
   author={Gyllenhaal, J and May, J and Schulz, M},
   year={2011},
   institution={Lawrence Livermore National Laboratory (LLNL), Livermore, CA (United States)}
-}
-
-@article{tum2021regale,
-  title={REGALE: An open architecture to equip next generation HPC applications with exascale capabilities},
-  author={TUM, Eishi Arima and UGA, Bruno Raffin and Georgiou, Yiannis and Cesarini, Daniele and Papadopoulou, Nikela and Seyedkazemi, Mohsen and Bartolini, Andrea and UGA, Pierre-Fran{\c{c}}ois Dutot and Schulz, Martin},
-  year={2021}
 }
 
 @inproceedings{huber2023case,
@@ -4613,6 +4186,7 @@
   year={2023}
 }
 
+
 @article{schulztowards,
   title={Towards the Munich Quantum Software Stack},
   author={Schulz, Martin and Schulz, Laura and Ruefenacht, Martin and Wille, Robert}
@@ -4632,11 +4206,6 @@
   booktitle={Proceedings of the 24th International Middleware Conference},
   pages={234--246},
   year={2023}
-}
-
-@article{arnoldrun,
-  title={Run-Time Support for Integrated Power and Resilience Management},
-  author={Arnold, Dorian and Bridges, Patrick and Ferreria, Kurt and Lowenthal, David K and Schulz, Martin}
 }
 
 @inproceedings{schulz2023towards,
@@ -4864,69 +4433,8 @@
   institution={Fachgruppe Informatik}
 }
 
-@article{schulz2005wissensmanagement,
-  title={Wissensmanagement-Herausforderung und Chance f{\"u}r Anw{\"a}lte},
-  author={Schulz, Martin},
-  journal={Neue Juristische Wochenschrift: NJW},
-  volume={58},
-  number={29},
-  pages={2049--2051},
-  year={2005},
-  publisher={Verlag CH Beck}
-}
 
-@article{schulz2005markt,
-  title={Der Markt elektronischer Rechtsinformationen--aktueller Stand und Zukunftsperspektiven},
-  author={Schulz, Martin and Klugmann, Marcel},
-  journal={Computer und Recht},
-  volume={21},
-  number={4},
-  pages={316--320},
-  year={2005},
-  publisher={Verlag Dr. Otto Schmidt}
-}
 
-@article{schulz2005knowledge,
-  title={Knowledge Management in International Professional Services Firms (KMIPSF)-Creating a Culture of Knowledge Sharing in Law Firms--Some Obstacles and Solutions},
-  author={Schulz, Martin and Klugmann, Marcel},
-  journal={Lecture Notes in Computer Science},
-  volume={3782},
-  pages={386--391},
-  year={2005},
-  publisher={Berlin: Springer-Verlag, 1973-}
-}
-
-@misc{schulz2006wissensmanagement,
-  title={Wissensmanagement f{\"u}r Anw{\"a}lte},
-  author={Schulz, Martin and Klugmann, Marcel},
-  year={2006},
-  publisher={Wolters Kluwer Deutschland}
-}
-
-@inproceedings{schulz2005creating,
-  title={Creating a Culture of Knowledge Sharing in Law Firms: --Some Obstacles and Solutions--},
-  author={Schulz, Martin and Klugmann, Marcel},
-  booktitle={Biennial Conference on Professional Knowledge Management/Wissensmanagement},
-  pages={386--391},
-  year={2005},
-  organization={Springer Berlin Heidelberg Berlin, Heidelberg}
-}
-
-@article{schulz2006google,
-  title={Mit dem „Google-Prinzip “durch die virtuelle Bibliothek? Neue Entwicklungen im Markt der elektronischen Rechtsinformationen},
-  author={Schulz, Martin and Klugmann, Marcel},
-  journal={Computer und Recht},
-  volume={22},
-  number={8},
-  pages={568--572},
-  year={2006},
-  publisher={Verlag Dr. Otto Schmidt}
-}
-
-@article{schmidtb,
-  title={B. Entscheidungsanmerkungen},
-  author={Schmidt, Stefan and Hanloser, Stefan and Schmitz, Peter and Eckhardt, Jens and Schulz, Anja and Schulz, Martin and Klugmann, Marcel and Schumacher, Volker A and Schuster, Fabian and Sch{\"u}tze, Marc and others}
-}
 
 @inproceedings{liu2024dataset,
   title={Dataset distillation by automatic training trajectories},
@@ -5005,10 +4513,6 @@
   organization={Springer Nature}
 }
 
-@article{doringgesellschaft,
-  title={Gesellschaft f{\"u}r Informatik eV Parallel-Algorithmen,-Rechnerstrukturen und-Systemsoftware},
-  author={D{\"o}ring, Andreas and Eicker, Norbert and J{\"u}lich, FZ and G{\"o}hringer, Diana and Juurlink, Ben and Karl, Wolfgang and Keller, KIT Prof Dr J{\"o}rg and Klemm, Michael and Kuhn, AMD Prof Dr Michael and Lankes, Stefan and others}
-}
 
 @inproceedings{ju2024dynamic,
   title={Dynamic resource management for in-situ techniques using mpi-sessions},
@@ -5028,19 +4532,7 @@
   organization={IEEE}
 }
 
-@article{bartsch2018spionage,
-  title={Spionage, Sabotage und Datendiebstahl--Wirtschaftsschutz in der Industrie},
-  author={Bartsch, Michael and Gentemann, L and Kob, T and Kr{\"o}smann, C and Mille, M and Petri, A and Ritter, T and Rost, P and Schmidt, S and Schulz, M and others},
-  journal={Studienbericht},
-  pages={60},
-  year={2018},
-  publisher={Bitkom e. V}
-}
 
-@article{arltverfasser,
-  title={A. Verfasser-und Beitragsverzeichnis},
-  author={Arlt, Christian and Bartsch, Michael and Dreier, Thomas and Bechtold, Stefan and Bergfelder, Martin and Bornhofen, Roland and Bornkamm, Joachim and Seichter, Dirk and Braun, Johann and B{\"u}llesbach, Alfred and others}
-}
 
 @inproceedings{laukemann2024exploiting,
   title={Exploiting Data Compression and Low Precision for Exascale Fusion Turbulence Simulations},
@@ -5277,11 +4769,6 @@
   year={2025}
 }
 
-@article{carretero2024malleability,
-  title={Malleability techniques applications in high-performance computing},
-  author={Carretero P{\'e}rez, Jes{\'u}s and Su{\'a}rez, Estela and Schulz, Martin},
-  year={2024}
-}
 
 @inproceedings{bungartz2024layered,
   title={A Layered Approach for Dynamic Resource Management in HPC},
@@ -5309,20 +4796,8 @@
   organization={Springer Science \& Business Media}
 }
 
-@article{zangerrecupero,
-  title={Recupero della password Recuperare la password},
-  author={Zanger, Beniamino and Mendl, Christian B and Schulz, Martin and Schreiber, Martin}
-}
 
-@inproceedings{kranzlmuller12002message,
-  title={in Message Passing Programs},
-  author={Kranzlm{\"u}ller$^1$, Dieter and Schulz, Martin},
-  booktitle={Recent Advances in Parallel Virtual Machine and Message Passing Interface: 9th European PVM/MPI User's Group Meeting Linz, Austria, September 29-October 2, 2002, Proceedings},
-  volume={9},
-  pages={357},
-  year={2002},
-  organization={Springer Science \& Business Media}
-}
+
 
 @techreport{schwitanski2025modeling,
   title={Modeling synchronization and consistency for data race detection in remote memory access programs},
@@ -5361,11 +4836,6 @@
   organization={IEEE}
 }
 
-@article{gerndt202530th,
-  title={30th IEEE International Workshop HIPS 2025 on High Level Programming Models and Supportive Environments},
-  author={Gerndt, Michael and Eigenmann, Rudolf and Mueller, Frank and Schulz, Martin and Taraf, Ahmad and Gerofi, Balazs},
-  year={2025}
-}
 
 @article{chung2025q,
   title={Q-BEAST: A Practical Course on Experimental Evaluation and Characterization of Quantum Computing Systems},

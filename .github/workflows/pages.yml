@@ -1,17 +1,17 @@
 
-name: Deploy GitHub Pages
+name: Build & Deploy Site (root + /pubs)
 
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [ main, master ]
     paths:
       - "index.html"
       - "assets/**"
+      - "pubs/**"
+      - "scripts/**"
       - ".github/workflows/pages.yml"
 
-# Required permissions for GitHub Pages via Actions
+# Required for GitHub Pages via Actions
 permissions:
   contents: read
   pages: write
@@ -28,12 +28,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare site
+      # If your root page is plain HTML only, you can skip language setup.
+      # Set up Python only because we need bibtexparser for publications.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies (publications generator)
         run: |
-          mkdir -p site
-          cp -r index.html assets site/ 2>/dev/null || true
-          # If you keep everything at repo root, index.html is enough:
-          # cp index.html site/
+          python -m pip install --upgrade pip
+          pip install bibtexparser
+
+      - name: Generate publications into site/pubs
+        run: |
+          # your script: input bib -> output html
+          python scripts/generation_publications.py pubs/schulz.bib pubs/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

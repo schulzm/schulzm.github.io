@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <title>Martin Schulz — TUM CAPS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Martin Schulz — Chair of Computer Architecture & Parallel Systems, TUM" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Martin Schulz — Chair of Computer Architecture & Parallel Systems (CAPS), TUM" />
   <style>
     :root{
       --bg:#ffffff; --text:#111; --muted:#555;
@@ -20,15 +21,17 @@
     a{color:var(--brand); text-decoration:none}
     a:hover{color:var(--brand-dark); text-decoration:underline}
 
+    /* Header */
     header{position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--border)}
     .container{max-width:1000px; margin:0 auto; padding:0 1rem}
-
     .topbar{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem 0}
     .brand{display:flex; align-items:center; gap:.75rem}
     .brand img.logo{height:40px; width:auto}
     .identity{display:flex; align-items:center; gap:.75rem}
     .avatar{width:48px; height:48px; border-radius:50%; object-fit:cover; border:1px solid var(--border)}
+    .links{display:flex; flex-wrap:wrap; gap:.75rem; align-items:center}
 
+    /* Tabs */
     nav{display:flex; flex-wrap:wrap; gap:.5rem; padding:.5rem 0 .75rem}
     .tab-btn{
       appearance:none; border:1px solid var(--border); background:var(--light); color:var(--text);
@@ -36,6 +39,7 @@
     }
     .tab-btn[aria-selected="true"]{background:var(--brand); color:#fff; border-color:var(--brand)}
 
+    /* Content */
     main{padding:1rem 0 2rem}
     section{display:none; animation:fade .2s ease-in}
     section.active{display:block}
@@ -47,84 +51,19 @@
     .muted{color:var(--muted)}
     footer{border-top:1px solid var(--border); padding:1rem 0; font-size:.95rem}
     code, pre{background:var(--light); padding:.25rem .4rem; border-radius:6px}
-
-    iframe{width:100%; min-height:60vh; border:1px solid var(--border); border-radius:12px; background:#fff}
-
     .badge{display:inline-block; background:var(--light); border:1px solid var(--border);
       padding:.25rem .5rem; border-radius:999px; margin:.25rem .25rem 0 0}
 
-    /* About/Contact layout with large portrait */
+    /* About/Contact layout with larger portrait */
     .about-layout{
-      display:grid; grid-template-columns:180px 1fr; gap:1rem; align-items:start;
+      display:grid; grid-template-columns:200px 1fr; gap:1rem; align-items:start;
     }
     .portrait{
-      width:180px; height:180px; border-radius:12px; object-fit:cover; border:1px solid var(--border);
+      width:200px; height:200px; border-radius:12px; object-fit:cover; border:1px solid var(--border);
     }
     @media (max-width:700px){
-      .about-layout{grid-template-columns:1fr; }
+      .about-layout{grid-template-columns:1fr}
       .portrait{width:100%; height:auto}
     }
 
-    .links{display:flex; flex-wrap:wrap; gap:.75rem; align-items:center}
-    .icon{width:18px; height:18px; vertical-align:middle; margin-right:.3rem}
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <!-- Top bar: TUM logo + identity + links -->
-      <div class="topbar">
-        <div class="brand">
-          <!-- TUM logo (local file recommended) -->
-          <a href="https://www.tum.de/" aria-label="TUM homepage">
-            <img class="logo" src="assets/tum-logo.svg" alt="TUM logo">
-          </a>
-          <div class="identity">
-            <!-- Small avatar -->
-            <img class="avatar" src="assets/martin-schulz.jpg" alt="Portrait of Martin Schulz">
-            <div>
-              <strong>Martin Schulz</strong><br/>
-              <span class="muted">Chair of Computer Architecture & Parallel Systems (CAPS), TUM</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Quick links -->
-        <div class="links">
-          <!-- Official CAPS/TUM profile -->
-          <a href="https://www.ce.cit.tum.de/en/caps/mitarbeiter/martin-schulz/" rel="noopener">Official CAPS/TUM profile</a>
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4.98 3.5A2.5 2.5 0 0 0 2.5 6a2.5 2.5 0 1 0 2.48-2.5ZM3 8.75h3.95V21H3V8.75Zm7.41 0h3.78v1.67h.05c.52-.98 1.79-2.01 3.68-2.01 3.93 0 4.65 2.58 4.65 5.94V21h-4.12v-5.47c0-1.31-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21h-4.09V8.75Z" fill="currentColor"/>
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-      </div>
-
-      <!-- Tabs -->
-      <nav role="tablist" aria-label="Primary">
-        <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-projects" id="btn-projects">Projects</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-publications" id="btn-publications">Publications</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-team" id="btn-team">Team</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-service" id="btn-service">Service</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-awards" id="btn-awards">Awards</button>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <!-- Intro / Contact card with large portrait -->
-    <div class="card" aria-labelledby="intro-title">
-      <h2 id="intro-title" style="margin-top:0">About & Contact</h2>
-      <div class="about-layout">
-        <img class="portrait" src="assets/martin-schulz.jpg" alt="Portrait of Martin Schulz (large)">
-        <div>
-          <p>
-            Full Professor and Chair of Computer Architecture & Parallel Systems at the Technical University of Munich (since 2017);
-            member of the Board of Directors at LRZ. Previous roles include LLNL/CASC and Cornell University.
-            Ph.D. (TUM, 2001), M.S. (UIUC). Chair of the MPI Forum; 250+ peer‑reviewed publications.
-          </p>
-          <p class="muted">
 

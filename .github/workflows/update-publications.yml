@@ -3,49 +3,57 @@ name: Update Publications Page
 
 on:
   push:
+    branches:
+      - main
+      - master
     paths:
       - pubs/schulz.bib  # Trigger only when BibTeX changes
+
+# Required for GitHub Pages via Actions
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install bibtexparser
 
-      - name: Generate HTML page
+      - name: Generate HTML page into site/
         run: |
+          # mkdir -p site/pubs
+          # Adjust your script to write to site/pubs/index.html (published site path)
           python scripts/generation_publications.py pubs/schulz.bib pubs/index.html
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add pubs/index.html
-          git commit -m "Update publications page"
-          git push
-
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      pages: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
-
+        uses: actions/deploy-pages@v4

@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate HTML page
         run: |
-          python scripts/generate_publications.py pubs/schulz.bib pubs/index.html
+          python scripts/generation_publications.py pubs/schulz.bib pubs/index.html
 
       - name: Commit and push changes
         run: |

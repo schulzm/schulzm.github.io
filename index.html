@@ -9,18 +9,21 @@
   <style>
     :root{
       --bg:#ffffff; --text:#111; --muted:#555;
-      --brand:#0d6efd; --brand-dark:#0a58ca;
+      --brand:#0065BD; /* TUM blue */
+      --brand-dark:#004a87;
       --light:#f6f8fa; --border:#e5e7eb;
     }
-    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,sans-serif;}
     a{color:var(--brand); text-decoration:none}
     a:hover{color:var(--brand-dark); text-decoration:underline}
-    header{
-      position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--border);
-    }
+    header{position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--border)}
     .container{max-width:1000px; margin:0 auto; padding:0 1rem}
-    .brand{display:flex; align-items:center; gap:.75rem; padding:.75rem 0}
-    .brand img{width:48px; height:48px; border-radius:8px}
+    .topbar{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem 0}
+    .brand{display:flex; align-items:center; gap:.75rem}
+    .brand img.logo{height:40px; width:auto}
+    .brand .identity{display:flex; align-items:center; gap:.75rem}
+    .avatar{width:48px; height:48px; border-radius:50%; object-fit:cover; border:1px solid var(--border)}
     nav{display:flex; flex-wrap:wrap; gap:.5rem; padding:.5rem 0 .75rem}
     .tab-btn{
       appearance:none; border:1px solid var(--border); background:var(--light); color:var(--text);
@@ -39,146 +42,38 @@
     code, pre{background:var(--light); padding:.25rem .4rem; border-radius:6px}
     iframe{width:100%; min-height:60vh; border:1px solid var(--border); border-radius:12px; background:#fff}
     .badge{display:inline-block; background:var(--light); border:1px solid var(--border); padding:.25rem .5rem; border-radius:999px; margin:.25rem .25rem 0 0}
+    .links{display:flex; flex-wrap:wrap; gap:.75rem; align-items:center}
+    .icon{width:18px; height:18px; vertical-align:middle; margin-right:.3rem}
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <div class="brand">
-        <img src="https://avatars.githubusercontent.com/u/0?v=4" alt="Avatar" />
-        <div>
-          <strong>Martin Schulz</strong><br/>
-          <span class="muted">Chair of Computer Architecture & Parallel Systems (CAPS), TUM</span>
+      <!-- Top bar: TUM logo + identity + links -->
+      <div class="topbar">
+        <div class="brand">
+          <!-- TUM logo (local file recommended) -->
+          <a href="https://www.tum.de/" target="_blank" rel="noopener" aria-label="TUM homepage">
+            <img class="logo" src="assets/tum-logo.svg" alt="TUM Logo" />
+          </a>
+          <div class="identity">
+            <!-- Your avatar -->
+            <img class="avatar" src="assets/martin-schulz.jpg" alt="Martin Schulz" />
+            <div>
+              <strong>Martin Schulz</strong><br/>
+              <span class="muted">Chair of Computer Architecture & Parallel Systems (CAPS), TUM</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <nav role="tablist" aria-label="Primary">
-        <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-projects" id="btn-projects">Projects</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-publications" id="btn-publications">Publications</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-team" id="btn-team">Team</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-service" id="btn-service">Service</button>
-        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-awards" id="btn-awards">Awards</button>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <!-- Intro card -->
-    <div class="card" aria-labelledby="intro-title">
-      <h2 id="intro-title" style="margin-top:0">About</h2>
-      <p>
-        Full Professor and Chair of Computer Architecture & Parallel Systems at the Technical University of Munich (since 2017); member of the Board of Directors at LRZ.
-        Previous roles include LLNL/CASC and Cornell University. Ph.D. (TUM, 2001), M.S. (UIUC). Chair of the MPI Forum; 250+ peer‑reviewed publications.
-      </p>
-      <p class="muted">
-        Contact: <a href="mailto:schulzm@in.tum.de">schulzm@in.tum.de</a> · Garching campus · More at
-        <a href="https://www.ce.cit.tum.de/en/caps/mitarbeiter/martin-schulz/" target="_blank" rel="noopener">CAPS profile</a>.
-      </p>
-      <div>
-        <span class="badge">HPC</span>
-        <span class="badge">Parallel Systems</span>
-        <span class="badge">Performance Analysis</span>
-        <span class="badge">Programming Models (MPI)</span>
-        <span class="badge">Fault Tolerance</span>
-        <span class="badge">Power‑aware Computing</span>
-        <span class="badge">Quantum Computing (HPC/QC)</span>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <section id="tab-projects" class="active" aria-labelledby="btn-projects">
-      <div class="grid">
-        <div class="card">
-          <h3>HPC Co‑Design & Hardware‑oriented Optimizations</h3>
-          <p>Exploring co‑design of software and hardware to push performance, efficiency, and scalability on modern systems.</p>
-        </div>
-        <div class="card">
-          <h3>Quantum Computing Architectures</h3>
-          <p>Architectures and programming for QC with a focus on integrating QC into HPC workflows.</p>
-        </div>
-        <div class="card">
-          <h3>Edge & IoT Architectures</h3>
-          <p>Systems and runtimes for distributed sensing and compute at the edge.</p>
-        </div>
-        <div class="card">
-          <h3>Cloud Computing</h3>
-          <p>Cloud‑oriented platforms and services for HPC and data‑intensive workloads.</p>
-        </div>
-      </div>
-      <p class="muted">These areas reflect the CAPS chair’s research focus. See the chair homepage for details.</p>
-    </section>
-
-    <!-- Publications (shows /pubs) -->
-    <section id="tab-publications" aria-labelledby="btn-publications">
-      <div class="card">
-        <h3>Publications</h3>
-        <p>This tab displays the publications page hosted at <code>/pubs/</code>.</p>
-        <iframe title="Publications" src="/pubs/" loading="lazy"></iframe>
-        <p class="muted">If the embedded page doesn’t load, open <a href="/pubs/" target="_blank" rel="noopener">schulzm.github.io/pubs</a> in a new tab.</p>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section id="tab-team" aria-labelledby="btn-team">
-      <div class="card">
-        <h3>Team</h3>
-        <p>CAPS includes professors, scientific staff, external scientists, and support staff. For the full, current roster, visit the official staff page.</p>
-        <p><a href="https://www.ce.cit.tum.de/en/caps/staff/" target="_blank" rel="noopener">CAPS Staff (English)</a> · <a href="https://www.ce.cit.tum.de/caps/mitarbeiter/" target="_blank" rel="noopener">CAPS Mitarbeiter (Deutsch)</a></p>
-      </div>
-    </section>
-
-    <!-- Service -->
-    <section id="tab-service" aria-labelledby="btn-service">
-      <div class="card">
-        <h3>Selected Academic Service</h3>
-        <ul>
-          <li>Chair, MPI Forum (Message Passing Interface)</li>
-          <li>Program Chair, ISC 2021; General Chair, EuroMPI 2021; PC Area Chair, IPDPS 2021</li>
-        </ul>
-        <p class="muted">See the CAPS profile for a comprehensive list of service and committees.</p>
-      </div>
-    </section>
-
-    <!-- Awards -->
-    <section id="tab-awards" aria-labelledby="btn-awards">
-      <div class="card">
-        <h3>Selected Awards</h3>
-        <ul>
-          <li>IEEE/ACM Gordon Bell Award (2006)</li>
-          <li>R&D 100 Award (STAT, 2011)</li>
-          <li>ACM Service Award (2009)</li>
-          <li>Best Paper Awards (e.g., IPDPS 2007, 2013)</li>
-        </ul>
-        <p class="muted">Further distinctions and honors are listed on the CAPS/TUM profile.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <span class="muted">© Martin Schulz · TUM CAPS · Built for GitHub Pages</span>
-    </div>
-  </footer>
-
-  <script>
-    // Simple accessible tab switching
-    const tabs = document.querySelectorAll('.tab-btn');
-    const sections = document.querySelectorAll('main section');
-    tabs.forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        tabs.forEach(b=>b.setAttribute('aria-selected', String(b===btn)));
-        sections.forEach(s=>s.classList.toggle('active', s.id===btn.getAttribute('aria-controls')));
-        // Scroll to top of active section (mobile)
-        document.getElementById(btn.getAttribute('aria-controls')).scrollIntoView({behavior:'smooth', block:'start'});
-        history.replaceState(null, '', '#'+btn.getAttribute('aria-controls').replace('tab-',''));
-      });
-    });
-    // Deep-link support (#publications etc.)
-    const hash = location.hash.replace('#','');
-    if(hash){
-      const targetBtn = document.getElementById('btn-'+hash);
-      if(targetBtn){ targetBtn.click(); }
-    }
-  </script>
-</body>
-</html>
+        <!-- Quick links -->
+        <div class="links">
+          <!-- Official CAPS/TUM profile -->
+          <a href="https://www.ce.cit.tum.de/en/caps/mitarbeiter/martin-schulz/" target="_blank" rel="noopener">
+            TUM Profile
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/your-linkedin-slug" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <!-- simple inline SVG icon -->
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 
